@@ -1,4 +1,4 @@
-baseURL = "https://jandertorben.github.io/tidtil-hugo-site/"
+baseURL = "https://jandertorben.github.io/tidtil/"
 languageCode = "de-DE"
 title = "TidTil – Familienzeit. Leicht gemacht."
 defaultContentLanguage = "de"
