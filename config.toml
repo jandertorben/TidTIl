@@ -9,7 +9,7 @@ disableKinds = ["taxonomy", "term"]
   tagline = "Familienzeit. Leicht gemacht."
   description = "Der ruhige Familienplaner für iPhone: Termine, Teilnehmer und gemeinsame Zeit an einem Ort."
   appStoreUrl = "#app-store-link-eintragen"
-  supportEmail = "support@deine-domain.de"
+  supportEmail = "jandertorben80@gmail.com"
   ownerName = "Torben Jander"
   accent = "#D37B70"
 

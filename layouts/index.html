@@ -1,14 +1,16 @@
 {{ define "main" }}
-<section class="hero section-grid">
+
+<!-- HERO -->
+<section class="hero">
   <div class="hero-copy reveal">
     <p class="section-eyebrow">{{ site.Params.tagline }}</p>
-    <h1>Für mehr gemeinsame Zeit.</h1>
-    <p class="lead">TidTil ist der ruhige Familienplaner für iPhone. Er hilft euch, Termine im Familienalltag einfach zu koordinieren, sicher zu teilen und den Blick auf das Wesentliche zu behalten.</p>
+    <h1>Für mehr gemeinsame Zeit</h1>
+    <p class="lead">TidTil hilft euch, Termine und Aktivitäten im Familienalltag einfach zu planen, zu teilen und bewusst im Blick zu behalten.</p>
     <div class="hero-actions">
-      <a class="button primary" href="{{ site.Params.appStoreUrl }}" aria-label="TidTil im App Store laden">Bald im App Store</a>
+      <a class="button primary" href="#appstore">Bald im App Store</a>
       <a class="button secondary" href="#funktionen">Mehr erfahren</a>
     </div>
-    <p class="microcopy">Keine Einkaufsliste. Kein Chat. Nur Planung, die sich ruhig anfühlt.</p>
+    <p class="microcopy">Kein Chat. Keine Listen. Nur ruhige Familienplanung.</p>
   </div>
   <div class="hero-visual reveal delay-1" aria-label="TidTil App Vorschau">
     <div class="soft-orb one"></div>
@@ -18,111 +20,276 @@
   </div>
 </section>
 
-<section class="livingroom reveal">
-  <img src="/images/tidtil-sync-livingroom.webp" alt="Zwei iPhones mit TidTil in einem hellen skandinavischen Wohnzimmer">
+<!-- LIVINGROOM IMAGE -->
+<div class="livingroom reveal">
+  <img src="/images/tidtil-sync-livingroom.webp" alt="Zwei iPhones mit TidTil in einem hellen skandinavischen Wohnzimmer" loading="eager">
   <div class="livingroom-card">
-    <span class="lock-dot" aria-hidden="true">⌁</span>
-    <h2>Gemeinsam planen. Ruhig bleiben.</h2>
+    <span class="livingroom-icon" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2 4 5v6c0 5.25 3.75 10.15 8 11.5C16.25 21.15 20 16.25 20 11V5l-8-3z"/></svg>
+    </span>
+    <h2>Gemeinsam planen.<br>Ruhig bleiben.</h2>
     <p>Termine werden dort sichtbar, wo sie hingehören: im Alltag der Familie. Klar, warm und ohne digitale Unruhe.</p>
   </div>
+</div>
+
+<!-- SITUATION -->
+<section class="situation-section">
+  <div class="container">
+    <div class="situation-inner reveal">
+      <p class="section-eyebrow">Klingt bekannt?</p>
+      <h2 class="situation-headline">Familienorganisation passiert überall und nirgends</h2>
+      <p class="situation-text">Auf dem Kühlschrank. Im Chat. Im Kopf. Auf dem Schreibtisch. Und wenn es wirklich darauf ankommt, fragt trotzdem jemand: „Wann war das nochmal?" TidTil ist die ruhige Antwort – nicht mit mehr Funktionen, sondern mit weniger.</p>
+    </div>
+  </div>
 </section>
 
+<!-- FEATURES -->
 <section id="funktionen" class="feature-section">
-  <div class="section-heading reveal">
-    <p class="section-eyebrow">Alles Wichtige. An einem Ort.</p>
-    <h2>Ein Kalender, der nicht lauter wird als euer Leben.</h2>
-  </div>
-  <div class="feature-grid">
-    <article class="feature-card reveal">
-      <span class="feature-icon">☉</span>
-      <h3>Heute im Fokus</h3>
-      <p>TidTil zeigt euch nur das, was jetzt und als Nächstes wichtig ist. So bleibt der Tag übersichtlich.</p>
-    </article>
-    <article class="feature-card reveal delay-1">
-      <span class="feature-icon">👨‍👩‍👧‍👦</span>
-      <h3>Für die ganze Familie</h3>
-      <p>Teilnehmer lassen sich einem Termin zuordnen. Jeder sieht schnell, wen ein Termin betrifft.</p>
-    </article>
-    <article class="feature-card reveal delay-2">
-      <span class="feature-icon">↻</span>
-      <h3>Automatisch synchronisiert</h3>
-      <p>Freigaben und Termine werden über iCloud/CloudKit zwischen euren Geräten synchronisiert.</p>
-    </article>
-    <article class="feature-card reveal delay-3">
-      <span class="feature-icon">＋</span>
-      <h3>Schnell eingetragen</h3>
-      <p>Neue Termine sollen ohne Umwege entstehen: öffnen, eintragen, fertig. Danach darf das Handy wieder weg.</p>
-    </article>
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="section-eyebrow">Was TidTil kann</p>
+      <h2>Alles Wichtige. An einem Ort</h2>
+    </div>
+    <div class="feature-grid">
+
+      <article class="feature-card reveal">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </span>
+        <h3>Heute im Fokus</h3>
+        <p>TidTil zeigt nur das, was jetzt und als Nächstes wichtig ist. Übersichtlich, ohne Archivgefühl.</p>
+      </article>
+
+      <article class="feature-card reveal delay-1">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="7" r="3"/>
+            <path d="M2 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2"/>
+            <circle cx="17" cy="9" r="2.5" opacity=".6"/>
+            <path d="M21 21v-1.5a4 4 0 0 0-2.5-3.74" opacity=".6"/>
+          </svg>
+        </span>
+        <h3>Für die ganze Familie</h3>
+        <p>Freigaben einrichten, Teilnehmer zuordnen – jeder sieht, was ihn betrifft. Klar und ohne Umwege.</p>
+      </article>
+
+      <article class="feature-card reveal delay-2">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="3"/>
+            <path d="M16 2v4M8 2v4M3 10h18"/>
+          </svg>
+        </span>
+        <h3>Termine koordinieren</h3>
+        <p>Aktivitäten schnell eintragen, Datum und Zeit setzen – und alle wissen, was wann ansteht.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.5 19H9a6 6 0 0 1-.5-12 5.5 5.5 0 0 1 10.97 1.63A4 4 0 0 1 17.5 19"/>
+            <path d="M12 13v5M9.5 15.5 12 13l2.5 2.5"/>
+          </svg>
+        </span>
+        <h3>Automatisch synchronisiert</h3>
+        <p>Über Apples iCloud/CloudKit-Infrastruktur synchronisieren sich Termine automatisch zwischen Geräten.</p>
+      </article>
+
+      <article class="feature-card reveal delay-1">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 4 5v6c0 5.25 3.75 10.15 8 11.5C16.25 21.15 20 16.25 20 11V5l-8-3z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </span>
+        <h3>Privat &amp; sicher</h3>
+        <p>Nach aktuellem Produktstand keine Werbung, kein Tracking. Eure Daten bleiben im Apple-Ökosystem.</p>
+      </article>
+
+      <article class="feature-card reveal delay-2">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/>
+          </svg>
+        </span>
+        <h3>Light &amp; Dark Mode</h3>
+        <p>TidTil folgt eurem Systemthema – warm und ruhig zu jeder Tageszeit, morgens wie abends.</p>
+      </article>
+
+    </div>
   </div>
 </section>
 
+<!-- SPLIT -->
 <section class="split-section">
-  <div class="split-media reveal"><img src="/images/tidtil-marketing-grid-dark.webp" alt="TidTil Marketingübersicht im dunklen warmen Stil"></div>
-  <div class="split-copy reveal delay-1">
-    <p class="section-eyebrow">Weniger App. Mehr Leben.</p>
-    <h2>Gebaut für Familien, die keine weitere laute App brauchen.</h2>
-    <p>TidTil verzichtet bewusst auf Funktionen, die den Familienalltag aufblähen. Keine Listen, kein Chat, kein permanentes Archivgefühl. Der Fokus liegt auf dem, was eure Planung wirklich trägt.</p>
-    <ul class="check-list">
-      <li>Termine und Aktivitäten koordinieren</li>
-      <li>Teilnehmer einfach verwalten</li>
-      <li>Familienfreigaben über iCloud</li>
-      <li>Light Mode und Dark Mode</li>
-    </ul>
+  <div class="container split-inner">
+    <div class="split-media reveal">
+      <img src="/images/tidtil-marketing-grid-dark.webp" alt="TidTil Übersicht im dunklen warmen Design" loading="lazy">
+    </div>
+    <div class="split-copy reveal delay-1">
+      <p class="section-eyebrow">Weniger App. Mehr Leben.</p>
+      <h2>Gebaut für Familien, die keine weitere laute App brauchen</h2>
+      <p>TidTil verzichtet bewusst auf Funktionen, die den Familienalltag aufblähen. Kein Chat, keine Listen, kein permanentes Archivgefühl. Der Fokus liegt auf dem, was eure Planung wirklich trägt.</p>
+      <ul class="check-list">
+        <li>Termine und Aktivitäten koordinieren</li>
+        <li>Teilnehmer pro Termin zuordnen</li>
+        <li>Familienfreigaben über iCloud/CloudKit</li>
+        <li>Tagesübersicht ohne unnötigen Ballast</li>
+        <li>Light Mode und Dark Mode</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section id="datenschutz" class="privacy-band reveal">
-  <div>
-    <p class="section-eyebrow">Privat by Design</p>
-    <h2>Familienplanung gehört nicht in einen Werbe-Feed.</h2>
-  </div>
-  <div class="privacy-content">
-    <p>TidTil ist für private Familienorganisation gedacht. Nach aktuellem Produktstand gibt es keine Werbung und kein Tracking. Die Synchronisation erfolgt über Apples iCloud/CloudKit-Infrastruktur.</p>
-    <a href="/datenschutz/">Datenschutzhinweise lesen</a>
+<!-- PHILOSOPHY -->
+<section id="philosophie" class="philosophy-section">
+  <div class="container">
+    <div class="philosophy-inner">
+      <div class="philosophy-text reveal">
+        <p class="section-eyebrow">Die Idee dahinter</p>
+        <h2>Ein Werkzeug, das sich zurücknimmt</h2>
+        <p>Gute Werkzeuge fallen nicht auf. Sie sind einfach da, wenn man sie braucht – und treten zurück, wenn nicht. TidTil ist so gebaut: wie ein gutes skandinavisches Möbelstück, das nicht um Aufmerksamkeit bettelt, aber jeden Tag zuverlässig seinen Platz hat.</p>
+        <p>Kein Drang, die App täglich zu öffnen. Kein permanentes Benachrichtigungsgefühl. Nur ein ruhiger, verlässlicher Ort für das, was eure Familie gemeinsam plant.</p>
+      </div>
+      <blockquote class="philosophy-quote reveal delay-1">
+        <p>„Weniger,<br>aber besser."</p>
+        <cite>Dieter Rams</cite>
+      </blockquote>
+    </div>
   </div>
 </section>
 
+<!-- PRIVACY -->
+<section id="datenschutz" class="privacy-section">
+  <div class="container">
+    <div class="privacy-band reveal">
+      <div class="privacy-head">
+        <p class="section-eyebrow">Privat by Design</p>
+        <h2>Familienplanung gehört nicht in einen Werbe-Feed</h2>
+      </div>
+      <div class="privacy-content">
+        <ul class="privacy-list">
+          <li>
+            <span class="privacy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M12 2 4 5v6c0 5.25 3.75 10.15 8 11.5C16.25 21.15 20 16.25 20 11V5l-8-3z"/>
+              </svg>
+            </span>
+            <div>
+              <strong>Keine Werbung</strong>
+              <span>TidTil enthält nach aktuellem Produktstand keine Werbenetzwerke.</span>
+            </div>
+          </li>
+          <li>
+            <span class="privacy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </span>
+            <div>
+              <strong>Kein Tracking</strong>
+              <span>Keine Datenweitergabe an Dritte zu Analyse- oder Werbezwecken.</span>
+            </div>
+          </li>
+          <li>
+            <span class="privacy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M17.5 19H9a6 6 0 0 1-.5-12 5.5 5.5 0 0 1 10.97 1.63A4 4 0 0 1 17.5 19"/>
+              </svg>
+            </span>
+            <div>
+              <strong>Apple iCloud / CloudKit</strong>
+              <span>Synchronisation über Apples eigene Infrastruktur – innerhalb des Apple-Ökosystems.</span>
+            </div>
+          </li>
+        </ul>
+        <a href="/datenschutz/" class="privacy-link">Vollständige Datenschutzhinweise lesen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENS -->
 <section class="screens-section">
-  <div class="section-heading reveal">
-    <p class="section-eyebrow">Light & Dark</p>
-    <h2>Ein ruhiger Look für morgens am Küchentisch und abends auf dem Sofa.</h2>
-  </div>
-  <div class="screens-grid">
-    <img class="reveal" src="/images/tidtil-light-phone.webp" alt="TidTil Light Mode Vorschau">
-    <img class="reveal delay-1" src="/images/tidtil-dark-phone.webp" alt="TidTil Dark Mode Vorschau">
-    <img class="reveal delay-2 wide" src="/images/tidtil-marketing-grid.webp" alt="TidTil Funktionsübersicht und App Screenshots">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="section-eyebrow">Light &amp; Dark</p>
+      <h2>Ruhig und klar – morgens am Küchentisch und abends auf dem Sofa</h2>
+    </div>
+    <div class="screens-grid">
+      <img class="reveal" src="/images/tidtil-light-phone.webp" alt="TidTil Light Mode auf einem iPhone" loading="lazy">
+      <img class="reveal delay-1" src="/images/tidtil-dark-phone.webp" alt="TidTil Dark Mode auf einem iPhone" loading="lazy">
+      <img class="reveal delay-2 wide" src="/images/tidtil-marketing-grid.webp" alt="TidTil Funktionsübersicht" loading="lazy">
+    </div>
   </div>
 </section>
 
+<!-- APP STORE -->
+<section id="appstore" class="appstore-section">
+  <div class="container">
+    <div class="appstore-inner reveal">
+      <p class="section-eyebrow">Verfügbarkeit</p>
+      <h2>Bald im App Store</h2>
+      <p>TidTil befindet sich aktuell in der TestFlight-Beta. Der App&#8209;Store&#8209;Start ist in Vorbereitung – du wirst es als Erstes erfahren.</p>
+      <div class="appstore-badges">
+        <span class="badge-placeholder" role="img" aria-label="App Store – demnächst verfügbar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          Demnächst im App Store
+        </span>
+      </div>
+      <p class="beta-note">Beta testen? Schreib uns eine <a href="mailto:{{ site.Params.supportEmail }}">E-Mail</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
 <section id="faq" class="faq-section">
-  <div class="section-heading reveal">
-    <p class="section-eyebrow">Fragen vor dem Download</p>
-    <h2>Kurz geklärt.</h2>
-  </div>
-  <div class="faq-list reveal">
-    <details open>
-      <summary>Ist TidTil ein vollständiger Kalenderersatz?</summary>
-      <p>TidTil ist bewusst als Familienplaner für gemeinsame Termine gedacht. Es ersetzt nicht zwingend jeden beruflichen oder langfristigen Kalender, sondern fokussiert den Familienalltag.</p>
-    </details>
-    <details>
-      <summary>Gibt es Einkaufslisten oder Chat?</summary>
-      <p>Nein. TidTil ist ein reiner Familien-Terminplaner. Diese Reduktion ist Teil des Konzepts.</p>
-    </details>
-    <details>
-      <summary>Wie werden Daten synchronisiert?</summary>
-      <p>Die App nutzt iCloud/CloudKit für Freigaben und Synchronisation zwischen berechtigten Familienmitgliedern.</p>
-    </details>
-    <details>
-      <summary>Wo bekomme ich Hilfe?</summary>
-      <p>Über die Support-Seite findest du Kontaktmöglichkeiten und Hinweise für TestFlight- und App-Store-Nutzer.</p>
-    </details>
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="section-eyebrow">Kurz geklärt</p>
+      <h2>Fragen vor dem Download</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details open>
+        <summary>Ist TidTil ein vollständiger Kalenderersatz?</summary>
+        <p>TidTil ist als Familienplaner für gemeinsame Termine gedacht – kein Ersatz für berufliche oder langfristige Kalender. Es fokussiert bewusst den Familienalltag.</p>
+      </details>
+      <details>
+        <summary>Gibt es Einkaufslisten oder Chat?</summary>
+        <p>Nein. TidTil ist ein reiner Familien-Terminplaner. Diese Reduktion ist Teil des Konzepts: Weniger Funktionen, mehr Ruhe.</p>
+      </details>
+      <details>
+        <summary>Wie funktioniert die Synchronisation?</summary>
+        <p>TidTil nutzt Apples iCloud/CloudKit-Infrastruktur. Freigegebene Termine werden automatisch zwischen berechtigten Geräten synchronisiert.</p>
+      </details>
+      <details>
+        <summary>Kostet TidTil etwas?</summary>
+        <p>Das Preismodell wird rechtzeitig vor der App-Store-Veröffentlichung bekannt gegeben.</p>
+      </details>
+      <details>
+        <summary>Wie kann ich die Beta testen?</summary>
+        <p>Schreibe uns eine E-Mail über die <a href="/support/">Support-Seite</a>. Wir freuen uns über Feedback aus der Community.</p>
+      </details>
+    </div>
   </div>
 </section>
 
-<section class="cta-section reveal">
-  <p class="section-eyebrow">TidTil</p>
-  <h2>Zeit für uns.</h2>
-  <p>Ein Familienplaner, der sich anfühlt wie ein aufgeräumtes Wohnzimmer: warm, ruhig und klar.</p>
-  <a class="button primary" href="{{ site.Params.appStoreUrl }}">Bald im App Store</a>
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <p class="section-eyebrow">TidTil</p>
+      <h2>Zeit für uns</h2>
+      <p>Ein Familienplaner, der sich anfühlt wie ein aufgeräumtes Wohnzimmer: warm, ruhig und klar.</p>
+      <a class="button primary" href="#appstore">Bald im App Store</a>
+    </div>
+  </div>
 </section>
+
 {{ end }}

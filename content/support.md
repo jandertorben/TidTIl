@@ -7,7 +7,7 @@ Du brauchst Hilfe mit TidTil oder möchtest einen Fehler melden?
 
 ## Kontakt
 
-Schreibe eine E-Mail an: **TODO: support@deine-domain.de**
+Schreibe eine E-Mail an: **[jandertorben80@gmail.com](mailto:jandertorben80@gmail.com)**
 
 Bitte füge möglichst folgende Informationen hinzu:
 
