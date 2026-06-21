@@ -1,0 +1,128 @@
+{{ define "main" }}
+<section class="hero section-grid">
+  <div class="hero-copy reveal">
+    <p class="section-eyebrow">{{ site.Params.tagline }}</p>
+    <h1>Für mehr gemeinsame Zeit.</h1>
+    <p class="lead">TidTil ist der ruhige Familienplaner für iPhone. Er hilft euch, Termine im Familienalltag einfach zu koordinieren, sicher zu teilen und den Blick auf das Wesentliche zu behalten.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ site.Params.appStoreUrl }}" aria-label="TidTil im App Store laden">Bald im App Store</a>
+      <a class="button secondary" href="#funktionen">Mehr erfahren</a>
+    </div>
+    <p class="microcopy">Keine Einkaufsliste. Kein Chat. Nur Planung, die sich ruhig anfühlt.</p>
+  </div>
+  <div class="hero-visual reveal delay-1" aria-label="TidTil App Vorschau">
+    <div class="soft-orb one"></div>
+    <div class="soft-orb two"></div>
+    <img class="phone phone-light" src="/images/tidtil-light-phone.webp" alt="TidTil im hellen Modus auf einem iPhone" loading="eager">
+    <img class="phone phone-dark" src="/images/tidtil-dark-phone.webp" alt="TidTil im dunklen Modus auf einem iPhone" loading="eager">
+  </div>
+</section>
+
+<section class="livingroom reveal">
+  <img src="/images/tidtil-sync-livingroom.webp" alt="Zwei iPhones mit TidTil in einem hellen skandinavischen Wohnzimmer">
+  <div class="livingroom-card">
+    <span class="lock-dot" aria-hidden="true">⌁</span>
+    <h2>Gemeinsam planen. Ruhig bleiben.</h2>
+    <p>Termine werden dort sichtbar, wo sie hingehören: im Alltag der Familie. Klar, warm und ohne digitale Unruhe.</p>
+  </div>
+</section>
+
+<section id="funktionen" class="feature-section">
+  <div class="section-heading reveal">
+    <p class="section-eyebrow">Alles Wichtige. An einem Ort.</p>
+    <h2>Ein Kalender, der nicht lauter wird als euer Leben.</h2>
+  </div>
+  <div class="feature-grid">
+    <article class="feature-card reveal">
+      <span class="feature-icon">☉</span>
+      <h3>Heute im Fokus</h3>
+      <p>TidTil zeigt euch nur das, was jetzt und als Nächstes wichtig ist. So bleibt der Tag übersichtlich.</p>
+    </article>
+    <article class="feature-card reveal delay-1">
+      <span class="feature-icon">👨‍👩‍👧‍👦</span>
+      <h3>Für die ganze Familie</h3>
+      <p>Teilnehmer lassen sich einem Termin zuordnen. Jeder sieht schnell, wen ein Termin betrifft.</p>
+    </article>
+    <article class="feature-card reveal delay-2">
+      <span class="feature-icon">↻</span>
+      <h3>Automatisch synchronisiert</h3>
+      <p>Freigaben und Termine werden über iCloud/CloudKit zwischen euren Geräten synchronisiert.</p>
+    </article>
+    <article class="feature-card reveal delay-3">
+      <span class="feature-icon">＋</span>
+      <h3>Schnell eingetragen</h3>
+      <p>Neue Termine sollen ohne Umwege entstehen: öffnen, eintragen, fertig. Danach darf das Handy wieder weg.</p>
+    </article>
+  </div>
+</section>
+
+<section class="split-section">
+  <div class="split-media reveal"><img src="/images/tidtil-marketing-grid-dark.webp" alt="TidTil Marketingübersicht im dunklen warmen Stil"></div>
+  <div class="split-copy reveal delay-1">
+    <p class="section-eyebrow">Weniger App. Mehr Leben.</p>
+    <h2>Gebaut für Familien, die keine weitere laute App brauchen.</h2>
+    <p>TidTil verzichtet bewusst auf Funktionen, die den Familienalltag aufblähen. Keine Listen, kein Chat, kein permanentes Archivgefühl. Der Fokus liegt auf dem, was eure Planung wirklich trägt.</p>
+    <ul class="check-list">
+      <li>Termine und Aktivitäten koordinieren</li>
+      <li>Teilnehmer einfach verwalten</li>
+      <li>Familienfreigaben über iCloud</li>
+      <li>Light Mode und Dark Mode</li>
+    </ul>
+  </div>
+</section>
+
+<section id="datenschutz" class="privacy-band reveal">
+  <div>
+    <p class="section-eyebrow">Privat by Design</p>
+    <h2>Familienplanung gehört nicht in einen Werbe-Feed.</h2>
+  </div>
+  <div class="privacy-content">
+    <p>TidTil ist für private Familienorganisation gedacht. Nach aktuellem Produktstand gibt es keine Werbung und kein Tracking. Die Synchronisation erfolgt über Apples iCloud/CloudKit-Infrastruktur.</p>
+    <a href="/datenschutz/">Datenschutzhinweise lesen</a>
+  </div>
+</section>
+
+<section class="screens-section">
+  <div class="section-heading reveal">
+    <p class="section-eyebrow">Light & Dark</p>
+    <h2>Ein ruhiger Look für morgens am Küchentisch und abends auf dem Sofa.</h2>
+  </div>
+  <div class="screens-grid">
+    <img class="reveal" src="/images/tidtil-light-phone.webp" alt="TidTil Light Mode Vorschau">
+    <img class="reveal delay-1" src="/images/tidtil-dark-phone.webp" alt="TidTil Dark Mode Vorschau">
+    <img class="reveal delay-2 wide" src="/images/tidtil-marketing-grid.webp" alt="TidTil Funktionsübersicht und App Screenshots">
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <div class="section-heading reveal">
+    <p class="section-eyebrow">Fragen vor dem Download</p>
+    <h2>Kurz geklärt.</h2>
+  </div>
+  <div class="faq-list reveal">
+    <details open>
+      <summary>Ist TidTil ein vollständiger Kalenderersatz?</summary>
+      <p>TidTil ist bewusst als Familienplaner für gemeinsame Termine gedacht. Es ersetzt nicht zwingend jeden beruflichen oder langfristigen Kalender, sondern fokussiert den Familienalltag.</p>
+    </details>
+    <details>
+      <summary>Gibt es Einkaufslisten oder Chat?</summary>
+      <p>Nein. TidTil ist ein reiner Familien-Terminplaner. Diese Reduktion ist Teil des Konzepts.</p>
+    </details>
+    <details>
+      <summary>Wie werden Daten synchronisiert?</summary>
+      <p>Die App nutzt iCloud/CloudKit für Freigaben und Synchronisation zwischen berechtigten Familienmitgliedern.</p>
+    </details>
+    <details>
+      <summary>Wo bekomme ich Hilfe?</summary>
+      <p>Über die Support-Seite findest du Kontaktmöglichkeiten und Hinweise für TestFlight- und App-Store-Nutzer.</p>
+    </details>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <p class="section-eyebrow">TidTil</p>
+  <h2>Zeit für uns.</h2>
+  <p>Ein Familienplaner, der sich anfühlt wie ein aufgeräumtes Wohnzimmer: warm, ruhig und klar.</p>
+  <a class="button primary" href="{{ site.Params.appStoreUrl }}">Bald im App Store</a>
+</section>
+{{ end }}

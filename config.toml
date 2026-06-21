@@ -1,0 +1,17 @@
+baseURL = "https://deine-domain.de/"
+languageCode = "de-DE"
+title = "TidTil – Familienzeit. Leicht gemacht."
+defaultContentLanguage = "de"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  appName = "TidTil"
+  tagline = "Familienzeit. Leicht gemacht."
+  description = "Der ruhige Familienplaner für iPhone: Termine, Teilnehmer und gemeinsame Zeit an einem Ort."
+  appStoreUrl = "#app-store-link-eintragen"
+  supportEmail = "support@deine-domain.de"
+  ownerName = "Torben Jander"
+  accent = "#D37B70"
+
+[markup.goldmark.renderer]
+  unsafe = true

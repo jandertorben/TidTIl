@@ -1,0 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta name="theme-color" content="#F5F1E8">
+  <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}">
+  <meta property="og:description" content="{{ site.Params.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ "images/tidtil-sync-livingroom.webp" | absURL }}">
+  <link rel="icon" href="/icons/tidtil-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
