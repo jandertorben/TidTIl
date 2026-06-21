@@ -1,32 +1,42 @@
-# TidTil Hugo Website
+# TidTil – Offizielle Webseite
 
-Moderne, skandinavisch ruhige Hugo-Landingpage für die iOS-App TidTil.
+**Familienzeit. Leicht gemacht.**
 
-## Start
+Offizielle Landingpage für [TidTil](https://jandertorben.github.io/TidTil/) – den ruhigen Familienplaner für iPhone. Gebaut mit [Hugo](https://gohugo.io/), deployed über GitHub Pages.
+
+---
+
+## Live
+
+[jandertorben.github.io/TidTil](https://jandertorben.github.io/TidTil/)
+
+## Stack
+
+- **Hugo** – Static Site Generator
+- **GitHub Pages** – Hosting
+- **GitHub Actions** – Automatisches Deployment bei Push auf `main`
+
+## Lokal starten
 
 ```bash
 hugo server
 ```
 
-Danach im Browser öffnen: `http://localhost:1313`
+Browser: `http://localhost:1313`
 
-## Vor Veröffentlichung ersetzen
+## Seitenstruktur
 
-In `config.toml`:
+| Seite | Zweck |
+|---|---|
+| `/` | Landingpage mit Hero, Features, Philosophie, Datenschutz, App Store |
+| `/datenschutz/` | Datenschutzerklärung (Privacy Policy URL für App Store) |
+| `/support/` | Support-Kontakt (Support URL für App Store) |
+| `/impressum/` | Impressum (gesetzliche Anbieterkennzeichnung) |
 
-- `baseURL`
-- `params.appStoreUrl`
-- `params.supportEmail`
-- `params.ownerName`
+## Vor Veröffentlichung
 
-In `content/datenschutz.md`, `content/support.md`, `content/impressum.md`:
+Folgende Platzhalter in `config.toml` und den Content-Seiten ersetzen:
 
-- TODO-Stellen ersetzen
-- Datenschutz mit finaler App-Technik abgleichen
-- Impressum rechtlich prüfen
-
-## App-Store-relevante Seiten
-
-- `/datenschutz/` als Privacy Policy URL
-- `/support/` als Support URL
-- `/impressum/` für Anbieterkennzeichnung in Deutschland
+- `params.appStoreUrl` – Link zum App Store Eintrag
+- Impressum: vollständige Adresse und Pflichtangaben ergänzen
+- Datenschutz: rechtlich prüfen und mit finaler App-Version abgleichen
